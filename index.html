@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Día del Padre</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+ <div class="layout">
+ <img src="imagenes/papa1.jpg" alt="Papa1" class="imagen-lateral">
+  <div class="container">
+    <div class="sobre" id="sobre">
+      <div class="tapa"></div>
+      <div class="contenido">
+        <h1>¡Feliz Día del Padre! 👨‍👧‍👦</h1>
+        <p id="mensaje"></p>
+        <img src="imagenes/papa6.jpg" alt="Padre e hijo" id="imagen-papa">
+      </div>
+    </div>
+    <button class="button" id="abrirBtn">Abrir Carta</button>
+  </div>
+ <img src="imagenes/papa5.jpg" alt="Papa2" class="imagen-lateral">
+ </div>
+ <h2>RECORDANDO MOMENTOS</h2>
+<div class="galeria">
+  <img src="imagenes/papa7.jpg" alt="Foto 1">
+  <img src="imagenes/papa3.jpg" alt="Foto 2">
+  <img src="imagenes/papa2.jpg" alt="Foto 3">
+</div>
+  <!-- Opcional: Música de fondo -->
+<audio id="musica" loop>
+  <source src="Gracias Papá - Fred Lammie.mp3" type="audio/mp3">
+</audio>
+<!-- Modal para ver imagen completa -->
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background-color:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:100;">
+  <img id="modal-img" src="" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* Fondo gradiente */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #8b0000, #000000);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Layout general con imágenes laterales */
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Imágenes laterales */
+.imagen-lateral {
+  width: 500px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Contenedor central */
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Carta */
+.sobre {
+  position: relative;
+}
+
+.tapa {
+  height: 30px;
+  background-color: #ff1e00;
+  border-radius: 5px 5px 0 0;
+}
+
+.contenido {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+.contenido h1 {
+  margin-top: 0;
+}
+
+.contenido p {
+  min-height: 80px;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+/* Imagen dentro del mensaje */
+.contenido img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Botón */
+.button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #aa0303;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #f50057;
+}
+
+h2 {
+Text-align:center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px #f50057;
+
+}
+
+/* Contenedor centrado y más grande */
+.galeria {
+  margin-top: 30px;
+  position: relative;
+  height: 220px; /* Aumenta la altura para que haya espacio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imágenes más grandes y apiladas */
+.galeria img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  position: absolute;
+  transition: transform 0.4s ease, filter 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+/* Posiciones apiladas */
+.galeria img:nth-child(1) { left: calc(50% - 280px); z-index: 1; }
+.galeria img:nth-child(2) { left: calc(50% - 140px); z-index: 2; }
+.galeria img:nth-child(3) { left: calc(50%); z-index: 3; }
+
+/* Hover destacado */
+.galeria img:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  filter: saturate(1.5) brightness(1.1);
+}
